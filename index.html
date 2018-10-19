@@ -45,6 +45,12 @@
  <p> Innanzitutto oggi <br> imparerete a scrivere <br> un sito in html </p>
   <button number="CLICCA PER SAPERE L'INTERROGATO DI OGGI" id=random-btn />
   <button number= "button" value="random number!" onclick=dofunction(Random);" />
+   <script type="text/javascript">
+    function Random() {
+        return Math.floor(Math.random() * 1000000000);
+    }
+       document.getElementById('random-btn').value = Random()
+</script>
 </body>
   <img scr= "connessione.jpg">
 </html>
