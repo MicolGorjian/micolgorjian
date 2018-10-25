@@ -1,37 +1,3 @@
-<html>
-<head>
-<meta charset= "utf-8">
-<title> CSS font-family property </title>
- 
-  <style> 
-   button {
-     color: rgb(255, 0, 0)
-   }
-    h1 {
-      color: rgb(102, 0, 102)
-    }
-   #creae-sito-title {
-    backgroundcolor: rgb (25, 25, 112)
-      }
-   
-    h2 {
-     color:  rgb(123, 27, 2)
-    }
-   .vantaggi-elenco {
-    backgroundcolor: rgb (80, 80, 0)
-   }
-    body {
-      background-color: rgb(255, 253, 208)
-    }
-   p {
-    size: 45
-   }
-  #paragrafo-1 {
-   backgroundcolor= rgb(227, 11, 92)
-   
-  </style>
-  </head>
-  
  <body>
   <h1 id="creare-sito-title"> </h1> ECCO COME  CREARE UN SITO
   <h1> ECCO COME CREARE UN SITO </h1>
@@ -45,13 +11,19 @@
 
       <h2>scopri chi è interrogato</h2>
 
-<p>l'interrogato di oggi è:</p>
+<p>Click the button to display a random number between 1 and 10.</p>
 
-<button onclick ="nome"()> Interroghiaml</button>
-                 <p id="demo"></p>
+<button onclick="myFunction()">OGGI E' INTERROGATO IL NUMERO</button>
+
+<p id="demo"></p>
+
 <script>
-  function nome(){          
-document.write(math.floor((math.random() * 13) + 1));}
+
+function myFunction() {
+    var x = Math.floor((Math.random() *13) + 1);
+    document.getElementById("demo").innerHTML = x;
+}
+
 </script>
  <ul> 
   <li> scrivere un sito in html è più preciso di creare un sito usando altri siti </li>
